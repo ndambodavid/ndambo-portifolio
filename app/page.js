@@ -7,6 +7,10 @@ import Experience from "./components/homepage/experience";
 import HeroSection from "./components/homepage/hero-section";
 import Projects from "./components/homepage/projects";
 import Skills from "./components/homepage/skills";
+import { getGitProfile, getGitProjects } from "@/utils/git-data";
+import GitLanguage from "./components/language";
+import Rank from "./components/rank";
+import Contributions from "./components/contributions";
 
 async function getData() {
   const res = await fetch(`https://dev.to/api/articles?username=${personalData.devUsername}`)
@@ -24,16 +28,23 @@ async function getData() {
 
 export default async function Home() {
   const blogs = await getData();
-
+  const profile = await getGitProfile();
+  const projects = await getGitProjects();
   return (
     <>
       <HeroSection />
       <AboutSection />
       <Experience />
       <Skills />
-      <Projects />
+      <Projects 
+        projects={projects.items}
+        profile={profile}
+      />
+      <GitLanguage />
+      <Rank />
+      <Contributions />
       <Education />
-      <Blog blogs={blogs} />
+      {/* <Blog blogs={blogs} /> */}
       <ContactSection />
     </>
   )

@@ -15,5 +15,5 @@ export const personalData = {
   devUsername: "said7388",
   githubUser: "ndambodavid",
   timezone: '+3',
-  resume: "https://drive.google.com/file/d/1eWScK76sGN4CN5ouAulC4DdvGh3HA1AL/view?usp=sharing"
+  resume: "https://drive.google.com/file/d/13o8mtbAafhmGZMHXV1r7TyXdkU7JnE61/view?usp=sharing"
 }

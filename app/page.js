@@ -42,7 +42,7 @@ export default async function Home() {
       />
       <GitLanguage />
       <Rank />
-      <Contributions />
+      {/* <Contributions /> */}
       <Education />
       {/* <Blog blogs={blogs} /> */}
       <ContactSection />

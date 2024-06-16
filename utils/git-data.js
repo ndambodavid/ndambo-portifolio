@@ -10,7 +10,7 @@ export async function getGitProfile() {
   };
   
 export  async function getGitProjects() {
-    const res = await fetch(`https://api.github.com/search/repositories?q=user:${personalData.githubUser}+fork:false&sort=stars&per_page=10&type=Repositories`)
+    const res = await fetch(`https://api.github.com/search/repositories?q=user:${personalData.githubUser}+fork:false&sort=updated&type=Repositories`)
   
     if (!res.ok) {
       throw new Error('Failed to fetch data')

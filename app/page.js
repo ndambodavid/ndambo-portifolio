@@ -41,7 +41,7 @@ export default async function Home() {
         profile={profile}
       />
       <GitLanguage />
-      <Rank />
+      {/* <Rank /> */}
       {/* <Contributions /> */}
       <Education />
       {/* <Blog blogs={blogs} /> */}

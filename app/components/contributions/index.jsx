@@ -13,6 +13,7 @@ function Contributions() {
         <GitHubCalendar
           username="ndambodavid"
           blockSize={14}
+          // year={2024}
         />
       </div>
     </div>

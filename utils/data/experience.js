@@ -1,9 +1,15 @@
 export const experiences = [
   {
+    id: 0,
+    title: "Infrastructure and DevOps Engineer",
+    company: "Roamtech Solutions Ltd (Hybrid)",
+    duration: "(Aug 2024 - Present)"
+  },
+  {
     id: 1,
     title: "Backend Developer",
-    company: "Roamtech Solutions Ltd (On-Site)",
-    duration: "(Feb 2024 - Present)"
+    company: "Roamtech Solutions Ltd (Hybrid)",
+    duration: "(Feb 2024 - Aug 2024)"
   },
   {
     id: 2,
